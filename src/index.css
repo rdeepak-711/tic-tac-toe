@@ -1,0 +1,47 @@
+body{
+  font: 5rem "Century Gothic", Futura, sans-serif;
+}
+
+.board-row::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status{
+  margin-bottom: 5rem;
+  text-align: center;
+  color: crimson;
+}
+
+.square{
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 8rem;
+  font-weight: bold;
+  line-height: 36px;
+  height: 10rem;
+  width: 10rem;
+  text-align: center;
+}
+
+.square:focus{
+  outline: none;
+  background: #ddd;
+}
+
+.game{
+  display: flex;
+  flex-direction: row;
+}
+
+.board-row{
+  margin-left: 9em;
+}
+
+.refresh{
+  margin-top: 3rem;
+  font-size: 5rem;
+  margin-left: 8.5em;
+}
