@@ -71,7 +71,7 @@ class Board extends React.Component{
         </div>
 
         <div>
-          <button className="refresh" onClick={refreshPage}>Click to refresh!</button>
+          <button className="refresh" onClick={newBoard}>Click to refresh!</button>
         </div>
       </div>
       
@@ -79,7 +79,7 @@ class Board extends React.Component{
   }
 }
 
-function refreshPage() {
+function newBoard() {
   window.location.reload(false);
 }
 
@@ -105,17 +105,8 @@ function calculateWinner(squares){
   return null;
 }
 
-class Game extends React.Component{
-  render(){
-    return(
-      <div className="game-board">
-        <Board />
-      </div>
-    )
-  }
-}
 
 ReactDOM.render(
-  <Game />,
+  <Board />,
   document.getElementById('root')
 );

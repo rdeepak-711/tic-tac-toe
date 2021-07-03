@@ -9,39 +9,36 @@ body{
 }
 
 .status{
+  display: flex;
   margin-bottom: 5rem;
   text-align: center;
-  color: crimson;
+  align-items: center;
 }
 
 .square{
+  height: 10rem;
+  width: 10rem;
   background: #fff;
   border: 1px solid #999;
   float: left;
   font-size: 8rem;
   font-weight: bold;
-  line-height: 36px;
-  height: 10rem;
-  width: 10rem;
   text-align: center;
 }
 
+@media screen and (max-width: 750px){
+  .square{
+    height: 6.5rem;
+    width: 6.5rem;
+    font-size: 5.3rem;
+  }
+}
 .square:focus{
   outline: none;
   background: #ddd;
 }
 
-.game{
-  display: flex;
-  flex-direction: row;
-}
-
-.board-row{
-  margin-left: 9em;
-}
-
 .refresh{
-  margin-top: 3rem;
-  font-size: 5rem;
-  margin-left: 8.5em;
+  margin: 2rem;
+  font-size: 3rem;
 }
